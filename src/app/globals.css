@@ -23,3 +23,13 @@ body {
   )
   rgb(var(--background-start-rgb));
 }
+
+@theme {
+    /* colors */
+    --color-primary: var(--color-purple-950);
+    --color-secondary: var(--color-pink-950);
+
+    /* background */
+    --background-image-gradient-radial: "radial-gradient(var(--tw-gradient-stops))";
+    --background-image-gradient-conic: "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))";
+}

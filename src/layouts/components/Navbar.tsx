@@ -9,6 +9,10 @@ import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid";
 
 const navLinks: NavLinkProps[] = [
   {
+    title: "Home",
+    href: "#",
+  },
+  {
     title: "About",
     href: "#about",
   },
