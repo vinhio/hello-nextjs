@@ -51,6 +51,23 @@ const tabData: TabProps[] = [
   },
 ];
 
+interface TabButtonProps {
+  tab: TabProps;
+  selectedTab: string;
+  setSelectedTab: (tab: string) => void;
+}
+
+const TabButton: React.FC<TabButtonProps> = ({tab, selectedTab, setSelectedTab}) => {
+  return (
+    <Fragment>
+      <button key={tab.id} onClick={() => setSelectedTab(tab.id)}><p
+        className="mr-3 font-semibold hover:text-white text-[#ADB7BE]">{tab.title}</p>
+        <div className={"h-1 bg-primary mt-2 mr-3 duration-300 " + (selectedTab === tab.id ? 'on-width' : 'w-0')}></div>
+      </button>
+    </Fragment>
+  );
+}
+
 const AboutSectionComponent: React.FC<BlankProps> = ({}) => {
   const [selectTab, setSelectTab] = useState<string>("skills");
 
@@ -71,10 +88,7 @@ const AboutSectionComponent: React.FC<BlankProps> = ({}) => {
             </p>
             <div className="flex flex-row justify-start mt-8">
               { tabData.map((tab) => (
-                <button key={tab.id} onClick={() => setSelectTab(tab.id)}><p
-                  className="mr-3 font-semibold hover:text-white text-[#ADB7BE]">{tab.title}</p>
-                  <div className={"h-1 bg-primary mt-2 mr-3 duration-300 " + (selectTab === tab.id ? 'on-width' : 'w-0')}></div>
-                </button>
+                <TabButton key={tab.id} tab={tab} selectedTab={selectTab} setSelectedTab={setSelectTab}/>
               ))}
             </div>
             <div className="mt-8">
