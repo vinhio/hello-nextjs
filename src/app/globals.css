@@ -33,3 +33,9 @@ body {
     --background-image-gradient-radial: "radial-gradient(var(--tw-gradient-stops))";
     --background-image-gradient-conic: "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))";
 }
+
+@layer components {
+    .on-width {
+        width: calc(100% - 0.75rem);
+    }
+}

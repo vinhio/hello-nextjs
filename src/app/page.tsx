@@ -1,12 +1,13 @@
 import {BlankProps} from "@/components";
 import React, {memo} from "react";
 import {MainLayout} from "@/layouts";
-import {HeroSection} from "@/app/_partials";
+import {AboutSection, HeroSection} from "./_partials";
 
 const HomeComponent: React.FC<BlankProps> = ({}) => {
   return (
       <MainLayout>
         <HeroSection />
+        <AboutSection />
       </MainLayout>
   );
 };
