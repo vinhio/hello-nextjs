@@ -2,7 +2,7 @@ import {BlankProps} from "@/components";
 import React, {memo} from "react";
 import {MainLayout} from "@/layouts";
 import {
-  AboutSection,
+  AboutSection, AchievementsSection,
   EmailSection,
   HeroSection,
   ProjectSection
@@ -12,6 +12,7 @@ const HomeComponent: React.FC<BlankProps> = ({}) => {
   return (
       <MainLayout>
         <HeroSection />
+        <AchievementsSection />
         <AboutSection />
         <ProjectSection />
         <EmailSection />
