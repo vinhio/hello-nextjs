@@ -1,7 +1,12 @@
 import {BlankProps} from "@/components";
 import React, {memo} from "react";
 import {MainLayout} from "@/layouts";
-import {AboutSection, HeroSection, ProjectSection} from "./_partials";
+import {
+  AboutSection,
+  EmailSection,
+  HeroSection,
+  ProjectSection
+} from "./_partials";
 
 const HomeComponent: React.FC<BlankProps> = ({}) => {
   return (
@@ -9,6 +14,7 @@ const HomeComponent: React.FC<BlankProps> = ({}) => {
         <HeroSection />
         <AboutSection />
         <ProjectSection />
+        <EmailSection />
       </MainLayout>
   );
 };

@@ -25,9 +25,9 @@ body {
 }
 
 @theme {
-    /* colors */
-    --color-primary: var(--color-purple-950);
-    --color-secondary: var(--color-pink-950);
+    --color-primary-500: var(--color-purple-500);
+    --color-primary-600: var(--color-purple-600);
+    --color-secondary-950: var(--color-pink-950);
 
     /* background */
     --background-image-gradient-radial: "radial-gradient(var(--tw-gradient-stops))";
